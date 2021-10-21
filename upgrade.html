@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="HandheldFriendly" content="true">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/global.css" type="text/css" media="all">
+        <title>Test task</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="auth-box">
+                <h1 class="center-text">Get Pro Account</h1>
+                <div class="img-box">
+                    <img src="images/upgrade.svg" alt="image description">
+                </div>
+                <form class="auth-from" action="#">
+                    <fieldset>
+                        <div class="row">
+                            <div class="inp-row without-ic">
+                                <input class="card-number" type="tel" maxlength="19" placeholder="Card Number" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="inp-row without-ic two-boxes">
+                                <div class="col">
+                                    <input type="tel" maxlength="7" placeholder="MM/YY">
+                                </div>
+                                <div class="col">
+                                    <input class="cvc" type="tel" maxlength="3"
+                                    placeholder="CVV" required>
+                                </div>
+                                <div class="right-box">
+                                    <div class="tooltip-box">
+                                        <span>What’s this?</span>
+                                        <div class="tooltip">
+                                            <p>A CVV is the three digit number on your card that adds an extra layer of
+                                                security</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="inp-row without-ic">
+                                <input type="text" name="ZIP/Postal Code" placeholder="ZIP/Postal Code" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="inp-row">
+                                <input type="submit" class="btn btn-upgrade" value="Upgrade">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

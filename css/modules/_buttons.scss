@@ -1,0 +1,29 @@
+%btn {   
+    padding: 10px;
+    color:#fff;
+    font-size: 14px;
+    width: 100%;
+    margin: 5px 0;
+    text-align: center;
+    display: block;
+    @include rounded-corner(5px); 
+}
+@mixin  btn-style($btn-style) {
+    @extend %btn;
+    background-color: $btn-style;
+    &:hover {
+        background-color: lighten($btn-style,10%);
+    }
+}
+.btn {
+    @include btn-style($primary);
+}
+.btn-upgrade {
+    @include btn-style($secondary);
+}
+.gl-btn {
+    @include btn-style($gl-btncolor);
+}
+.fb-btn {
+    @include btn-style($fb-btncolor);
+}

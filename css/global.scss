@@ -1,0 +1,66 @@
+@import 'vendor/_normalize.scss';
+@import 'base/_variables.scss';
+@import 'base/_mixins.scss';
+@import 'modules/_inputs.scss';
+@import 'modules/_buttons.scss';
+html {
+    height: 100%;
+}
+body{
+    font-family: $font-primary;
+    font-size: 16px;
+    min-width:360px;
+    height:100%;
+}
+.wrapper {
+    @include flexbox;
+    @include flex-direction(column);
+    @include justify-content(space-around);
+    width:344px;
+    padding:2vh 8px;
+    margin: 0 auto;
+    min-height: 100%;
+}
+.img-box{
+    @include flexbox;
+    @include justify-content(center);
+    margin-bottom:25px;
+}
+h1{
+    margin:0 0 25px;
+    font-family: $font-primary;
+    font-size: 36px;
+    line-height: 42px;
+}
+.center-text{
+    text-align: center;
+}
+.bottom-text{
+    margin-bottom: 3vh;
+    color: $grey-text;
+}
+.auth-from {
+    width: 100%;
+    .row{
+        margin-bottom: 30px;
+    }
+    .right-box {
+        text-align: right;
+        margin-top: 10px;
+        a{
+            color: $primary;
+        }
+    }
+}
+.footer-auth {
+    p{
+        text-align: center;
+    }
+}
+.two-boxes{
+    @include flexbox;
+    @include justify-content(space-between);
+    .col{
+        width:48%,
+    }
+}
